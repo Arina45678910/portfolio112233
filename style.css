@@ -192,3 +192,36 @@ padding-bottom: 17px;
     height: 100%;
     object-fit: cover;
 }
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.social-lists{
+    display: flex;
+}
+.social-item{
+    width: 30px;
+    height: 30px;
+}
+.social__link{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.social__link-insta{
+    background-image: url(img/insta.png);
+    
+}
+.social__link-fb{
+    background-image: url(img/fb.png);
+}
+.social__link-twit{
+    background-image: url(img/Linkedin.png);
+}
+.social__link-in{
+    background-image: url(img/Group.png);
+}
