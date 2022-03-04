@@ -54,6 +54,40 @@ nav{
     color: #000000;
     font-weight: 500;
 }
+.header__burger{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.header__burger-el{
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position:relative
+    
+}
+.header__burger-el::before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: absolute;
+    top: -9px;
+}
+.header__burger-el::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;  
+    position: absolute;
+    bottom: -9px;
+}
+@media(max-width:480px){
+    .nav{
+        display: none;
+    }
+}
 .about{
     padding-top: 158px;
     padding-bottom: 71px;
@@ -175,9 +209,9 @@ padding-bottom: 17px;
 }
 .work{
     display: flex;
-    margin-top: 20px;
     padding-top: 35px;
     padding-bottom: 35px;
+    border-bottom: 1px solid #E0E0E0;
 }
 .work__img-wrap{
     margin-right: 18px;
@@ -195,15 +229,18 @@ padding-bottom: 17px;
 .footer__container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 26px;
+    padding-bottom: 54px;
 }
 .social-lists{
     display: flex;
+    padding-bottom: 26px;
 }
 .social-item{
     width: 30px;
     height: 30px;
+    margin-right: 35px;
 }
 .social__link{
     background-repeat: no-repeat;
@@ -220,8 +257,13 @@ padding-bottom: 17px;
     background-image: url(img/fb.png);
 }
 .social__link-twit{
-    background-image: url(img/Linkedin.png);
+    background-image: url(img/Group.png);
 }
 .social__link-in{
-    background-image: url(img/Group.png);
+    background-image: url(img/Linkedin.png);
+}
+footer__text{
+font-size: 14px;
+line-height: 21px;
+color: #21243D;
 }
